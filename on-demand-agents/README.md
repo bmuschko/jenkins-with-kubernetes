@@ -2,6 +2,7 @@
 
 * Running Jenkins master and agents as Kubernetes Pods.
 * Agents are created on-demand as needed and deleted after use.
+* Tested with Docker Desktop CE on MacOSX version 2.1.0.0.
 
 ## Creating a Docker image for the Jenkins master
 
@@ -10,7 +11,7 @@
 ### Writing the Dockerfile
 
 * Create a new Dockerfile. The recommended base image is `jenkins/jenkins:lts`.
-* Install all needed plugins with the script `install-plugins.sh`. It's a good idea to externalize the list of plugins into a text file. As a minimum, you'll need the `ssl-slaves` and `kubernetes` plugin.
+* Install all needed plugins with the script `install-plugins.sh`. It's a good idea to externalize the list of plugins into a text file. As a minimum, you'll need the `ssl-slaves` and `kubernetes` plugin. The plugin ID can be looked up by searching for the plugin name in the [plugins index](https://plugins.jenkins.io/).
 * Run the container with the `jenkins` user.
 
 ### Building and pushing the image
