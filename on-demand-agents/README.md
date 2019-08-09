@@ -1,4 +1,4 @@
-# On-demand Jenkins agents as Kubernetes Pods
+# On-Demand Jenkins Agents as Kubernetes Pods
 
 * Running Jenkins master and agents as Kubernetes Pods.
 * Agents are created on-demand as needed and deleted after use.
