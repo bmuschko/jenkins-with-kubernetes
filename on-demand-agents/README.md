@@ -1,5 +1,8 @@
 # On-demand Jenkins agents as Kubernetes Pods
 
+* Running Jenkins master and agents as Kubernetes Pods.
+* Agents are created on-demand as needed and deleted after use.
+
 ## Creating a Docker image for the Jenkins master
 
 > Configuration can be found in the [`master-docker-image` directory](./master-docker-image).
