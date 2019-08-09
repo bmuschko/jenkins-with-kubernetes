@@ -6,7 +6,7 @@
 
 ## Creating a Docker image for the Jenkins master
 
-> Configuration can be found in the [`master-docker-image` directory](./master-docker-image).
+> Configuration can be found in the [`master-docker-image`](./master-docker-image) directory.
 
 ### Writing the Dockerfile
 
@@ -25,7 +25,7 @@ $ docker push bmuschko/jenkins-kubernetes:0.0.1
 
 ## Running the Jenkins master on Kubernetes
 
-> Configuration can be found in the [`kubernetes-objects` directory](./kubernetes-objects).
+> Configuration can be found in the [`kubernetes-objects`](./kubernetes-objects) directory.
 
 ### Creating the Deployment
 
