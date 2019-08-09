@@ -1,3 +1,4 @@
+git
 ssh-slaves
 kubernetes
 workflow-aggregator
