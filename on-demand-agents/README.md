@@ -10,7 +10,7 @@
 * Install all needed plugins with the script `install-plugins.sh`. It's a good idea to externalize the list of plugins into a text file. As a minimum, you'll need the `ssl-slaves` and `kubernetes` plugin.
 * Run the container with the `jenkins` user.
 
-## Building and pushing the image
+### Building and pushing the image
 
 * Build a new Docker image. Optionally, push the image to a registry.
 
@@ -23,7 +23,7 @@ $ docker push bmuschko/jenkins-kubernetes:0.0.1
 
 > Configuration can be found in the [`kubernetes-objects` directory](./kubernetes-objects).
 
-## Creating the Deployment
+### Creating the Deployment
 
 * Create a new Deployment YAML file that uses the Docker image built in the previous step.
 * Define only one replica for the Jenkins master.
@@ -35,7 +35,7 @@ $ docker push bmuschko/jenkins-kubernetes:0.0.1
 $ kubectl apply -f jenkins-deployment.yaml
 ```
 
-## Creating the Service
+### Creating the Service
 
 * Create a new Service YAML file that selects the label of the Deployment.
 * Expose the ports 8080 and 50000 with type `NodePort`.
